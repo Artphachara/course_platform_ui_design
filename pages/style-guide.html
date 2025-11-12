@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide - Video Course Platform</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/browser-compatibility.css">
+    <style>
+        .style-guide {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--purple-primary);
+        }
+
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .color-card {
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-swatch {
+            height: 120px;
+            width: 100%;
+        }
+
+        .color-info {
+            padding: 1rem;
+            background: white;
+        }
+
+        .color-name {
+            font-weight: 600;
+            color: var(--gray-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .color-value {
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            color: var(--gray-600);
+        }
+
+        /* Typography */
+        .typography-sample {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--gray-50);
+            border-radius: 8px;
+        }
+
+        .typography-label {
+            font-size: 0.875rem;
+            color: var(--gray-600);
+            margin-bottom: 0.5rem;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Component Variations */
+        .component-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .component-demo {
+            padding: 2rem;
+            background: var(--gray-50);
+            border-radius: 8px;
+            border: 1px solid var(--gray-200);
+        }
+
+        .component-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--gray-600);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Button Variations */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Spacing Scale */
+        .spacing-demo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .spacing-box {
+            background: var(--purple-primary);
+            height: 40px;
+        }
+
+        .spacing-label {
+            margin-left: 1rem;
+            font-family: 'Courier New', monospace;
+            color: var(--gray-600);
+        }
+    </style>
+</head>
+<body>
+    <div class="style-guide">
+        <h1 style="font-size: 3rem; color: var(--purple-primary); margin-bottom: 1rem;">Style Guide</h1>
+        <p style="font-size: 1.125rem; color: var(--gray-600); margin-bottom: 3rem;">
+            คู่มือการออกแบบสำหรับแพลตฟอร์มคอร์สวิดีโอ - ใช้เป็นแนวทางในการพัฒนา WordPress
+        </p>
+
+        <!-- Color Palette Section -->
+        <section class="section">
+            <h2 class="section-title">Color Palette</h2>
+            
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--gray-900);">Primary Colors</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--purple-primary);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Purple Primary</div>
+                        <div class="color-value">#7C3AED</div>
+                        <div class="color-value">--purple-primary</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--purple-dark);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Purple Dark</div>
+                        <div class="color-value">#5B21B6</div>
+                        <div class="color-value">--purple-dark</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--purple-light);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Purple Light</div>
+                        <div class="color-value">#A78BFA</div>
+                        <div class="color-value">--purple-light</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--purple-pale);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Purple Pale</div>
+                        <div class="color-value">#EDE9FE</div>
+                        <div class="color-value">--purple-pale</div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--gray-900);">Neutral Colors</h3>
+            <div class="color-grid">
+                <div class="color-card">
+                    <div class="color-swatch" style="background: white; border: 1px solid var(--gray-200);"></div>
+                    <div class="color-info">
+                        <div class="color-name">White</div>
+                        <div class="color-value">#FFFFFF</div>
+                        <div class="color-value">--white</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--gray-50);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Gray 50</div>
+                        <div class="color-value">#F9FAFB</div>
+                        <div class="color-value">--gray-50</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--gray-200);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Gray 200</div>
+                        <div class="color-value">#E5E7EB</div>
+                        <div class="color-value">--gray-200</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--gray-600);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Gray 600</div>
+                        <div class="color-value">#4B5563</div>
+                        <div class="color-value">--gray-600</div>
+                    </div>
+                </div>
+                <div class="color-card">
+                    <div class="color-swatch" style="background: var(--gray-900);"></div>
+                    <div class="color-info">
+                        <div class="color-name">Gray 900</div>
+                        <div class="color-value">#111827</div>
+                        <div class="color-value">--gray-900</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section class="section">
+            <h2 class="section-title">Typography Scale</h2>
+            
+            <div class="typography-sample">
+                <div class="typography-label">H1 - 48px / 3rem - Bold</div>
+                <h1>คอร์สเรียนออนไลน์คุณภาพ</h1>
+            </div>
+
+            <div class="typography-sample">
+                <div class="typography-label">H2 - 36px / 2.25rem - Bold</div>
+                <h2>เนื้อหาในคอร์ส</h2>
+            </div>
+
+            <div class="typography-sample">
+                <div class="typography-label">H3 - 24px / 1.5rem - Semibold</div>
+                <h3>การเขียนโปรแกรม JavaScript</h3>
+            </div>
+
+            <div class="typography-sample">
+                <div class="typography-label">H4 - 20px / 1.25rem - Semibold</div>
+                <h4>บทที่ 1: พื้นฐาน JavaScript</h4>
+            </div>
+
+            <div class="typography-sample">
+                <div class="typography-label">Body - 16px / 1rem - Regular</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <div class="typography-sample">
+                <div class="typography-label">Small - 14px / 0.875rem - Regular</div>
+                <p style="font-size: 0.875rem;">ข้อมูลเพิ่มเติมหรือคำอธิบายเสริม</p>
+            </div>
+
+            <h3 style="font-size: 1.5rem; margin: 2rem 0 1rem; color: var(--gray-900);">Font Families</h3>
+            <div class="typography-sample">
+                <div class="typography-label">Primary: Inter, Noto Sans Thai, sans-serif</div>
+                <p style="font-family: 'Inter', 'Noto Sans Thai', sans-serif;">The quick brown fox jumps over the lazy dog. ทดสอบฟอนต์ภาษาไทย</p>
+            </div>
+
+            <div class="typography-sample">
+                <div class="typography-label">Headings: Poppins, Noto Sans Thai, sans-serif</div>
+                <h3 style="font-family: 'Poppins', 'Noto Sans Thai', sans-serif;">The quick brown fox jumps over the lazy dog</h3>
+            </div>
+        </section>
+
+        <!-- Spacing Scale -->
+        <section class="section">
+            <h2 class="section-title">Spacing Scale</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--gray-600);">ระบบ spacing ใช้ 8px เป็น base unit</p>
+            
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 4px;"></div>
+                <div class="spacing-label">xs: 4px (0.25rem)</div>
+            </div>
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 8px;"></div>
+                <div class="spacing-label">sm: 8px (0.5rem)</div>
+            </div>
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 16px;"></div>
+                <div class="spacing-label">md: 16px (1rem)</div>
+            </div>
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 24px;"></div>
+                <div class="spacing-label">lg: 24px (1.5rem)</div>
+            </div>
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 32px;"></div>
+                <div class="spacing-label">xl: 32px (2rem)</div>
+            </div>
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 48px;"></div>
+                <div class="spacing-label">2xl: 48px (3rem)</div>
+            </div>
+            <div class="spacing-demo">
+                <div class="spacing-box" style="width: 64px;"></div>
+                <div class="spacing-label">3xl: 64px (4rem)</div>
+            </div>
+        </section>
+
+        <!-- Component Variations -->
+        <section class="section">
+            <h2 class="section-title">Component Variations</h2>
+
+            <!-- Buttons -->
+            <div class="component-demo">
+                <div class="component-label">Buttons</div>
+                <div class="button-group">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                    <button class="btn btn-primary" disabled>Disabled Button</button>
+                </div>
+            </div>
+
+            <!-- Course Cards -->
+            <div class="component-demo">
+                <div class="component-label">Course Card</div>
+                <div style="max-width: 350px;">
+                    <div class="course-card">
+                        <div class="course-thumbnail">
+                            <img src="../images/.gitkeep" alt="Course thumbnail" style="width: 100%; height: 200px; background: var(--gray-200); object-fit: cover;">
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">การเขียนโปรแกรม JavaScript</h3>
+                            <p class="course-description">เรียนรู้พื้นฐานและเทคนิคขั้นสูงของ JavaScript</p>
+                            <div class="course-meta">
+                                <span>👤 อาจารย์สมชาย</span>
+                                <span>📹 15 วิดีโอ</span>
+                            </div>
+                            <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">เริ่มเรียน →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video List Item -->
+            <div class="component-demo">
+                <div class="component-label">Video List Item</div>
+                <div class="video-item">
+                    <div class="video-play-icon">▶</div>
+                    <div class="video-thumbnail">
+                        <div style="width: 80px; height: 45px; background: var(--gray-200);"></div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">บทที่ 1: พื้นฐาน JavaScript</div>
+                    </div>
+                    <div class="video-duration">10:30</div>
+                </div>
+                <div class="video-item active">
+                    <div class="video-play-icon">▶</div>
+                    <div class="video-thumbnail">
+                        <div style="width: 80px; height: 45px; background: var(--gray-200);"></div>
+                    </div>
+                    <div class="video-info">
+                        <div class="video-title">บทที่ 2: Variables และ Data Types (Active State)</div>
+                    </div>
+                    <div class="video-duration">15:45</div>
+                </div>
+            </div>
+
+            <!-- Border Radius -->
+            <div class="component-demo">
+                <div class="component-label">Border Radius</div>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <div style="width: 100px; height: 100px; background: var(--purple-primary); border-radius: 4px;">
+                        <div style="color: white; text-align: center; padding-top: 40px; font-size: 0.75rem;">Small<br>4px</div>
+                    </div>
+                    <div style="width: 100px; height: 100px; background: var(--purple-primary); border-radius: 8px;">
+                        <div style="color: white; text-align: center; padding-top: 40px; font-size: 0.75rem;">Medium<br>8px</div>
+                    </div>
+                    <div style="width: 100px; height: 100px; background: var(--purple-primary); border-radius: 12px;">
+                        <div style="color: white; text-align: center; padding-top: 40px; font-size: 0.75rem;">Large<br>12px</div>
+                    </div>
+                    <div style="width: 100px; height: 100px; background: var(--purple-primary); border-radius: 16px;">
+                        <div style="color: white; text-align: center; padding-top: 40px; font-size: 0.75rem;">XLarge<br>16px</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shadows -->
+            <div class="component-demo">
+                <div class="component-label">Shadows</div>
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                    <div style="width: 150px; height: 100px; background: white; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-size: 0.875rem; color: var(--gray-600);">Small</span>
+                    </div>
+                    <div style="width: 150px; height: 100px; background: white; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-size: 0.875rem; color: var(--gray-600);">Medium</span>
+                    </div>
+                    <div style="width: 150px; height: 100px; background: white; box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <span style="font-size: 0.875rem; color: var(--gray-600);">Large</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Breakpoints -->
+        <section class="section">
+            <h2 class="section-title">Responsive Breakpoints</h2>
+            <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--gray-200);">
+                <div style="margin-bottom: 1rem;">
+                    <strong>Mobile:</strong> <code style="background: var(--purple-pale); padding: 0.25rem 0.5rem; border-radius: 4px;">320px - 767px</code>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <strong>Tablet:</strong> <code style="background: var(--purple-pale); padding: 0.25rem 0.5rem; border-radius: 4px;">768px - 1023px</code>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <strong>Desktop:</strong> <code style="background: var(--purple-pale); padding: 0.25rem 0.5rem; border-radius: 4px;">1024px - 1919px</code>
+                </div>
+                <div>
+                    <strong>Large Desktop:</strong> <code style="background: var(--purple-pale); padding: 0.25rem 0.5rem; border-radius: 4px;">1920px+</code>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

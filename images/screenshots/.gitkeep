@@ -1,0 +1,59 @@
+# Screenshots Directory
+
+This directory contains screenshots of the website pages for documentation purposes.
+
+## Recommended Screenshots
+
+### 1. Course Catalog (index.html)
+- `course-catalog-desktop.png` - Desktop view (1920px)
+- `course-catalog-tablet.png` - Tablet view (768px)
+- `course-catalog-mobile.png` - Mobile view (375px)
+- `course-catalog-hero.png` - Hero section closeup
+
+### 2. Course Detail (pages/course-detail.html)
+- `course-detail-desktop.png` - Full page desktop view
+- `course-detail-mobile.png` - Mobile view
+- `course-detail-video-list.png` - Video list section
+
+### 3. Video Player (pages/video-player.html)
+- `video-player-desktop.png` - Desktop with sidebar
+- `video-player-mobile.png` - Mobile stacked layout
+- `video-player-playlist.png` - Playlist closeup
+
+### 4. Components
+- `header-desktop.png` - Header navigation
+- `header-mobile.png` - Mobile hamburger menu
+- `footer.png` - Footer section
+- `course-card.png` - Course card component
+
+### 5. Style Guide
+- `style-guide-colors.png` - Color palette
+- `style-guide-typography.png` - Typography scale
+- `style-guide-components.png` - Component library
+
+## How to Take Screenshots
+
+### Using Browser DevTools
+
+1. Open the page in Chrome/Firefox
+2. Press F12 to open DevTools
+3. Click device toolbar icon (or Ctrl+Shift+M)
+4. Select device size or enter custom dimensions
+5. Take screenshot:
+   - Chrome: DevTools menu → Capture screenshot
+   - Firefox: Right-click → Take a Screenshot
+
+### Recommended Tools
+
+- **Browser Extensions**: Full Page Screen Capture, Awesome Screenshot
+- **Desktop Tools**: Snipping Tool (Windows), Screenshot (Mac)
+- **Online Tools**: screely.com, screenshot.rocks
+
+## Image Specifications
+
+- Format: PNG (for UI) or JPG (for photos)
+- Desktop: 1920px width
+- Tablet: 768px width  
+- Mobile: 375px width
+- Quality: High (80-90%)
+- File size: Optimize to < 500KB per image

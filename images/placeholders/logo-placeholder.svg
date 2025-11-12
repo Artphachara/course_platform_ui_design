@@ -1,0 +1,5 @@
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="8" fill="#7C3AED"/>
+  <path d="M15 12L25 20L15 28V12Z" fill="white"/>
+  <text x="50" y="28" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#7C3AED">Course Platform</text>
+</svg>

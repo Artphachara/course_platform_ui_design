@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="แพลตฟอร์มคอร์สวิดีโอออนไลน์ เรียนรู้ได้ทุกที่ ทุกเวลา">
+  <title>คอร์สเรียนออนไลน์ - หน้าแรก</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/browser-compatibility.css">
+</head>
+<body>
+  <!-- Header Component -->
+  <header id="header" class="header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html" aria-label="กลับไปหน้าแรก">
+          <span class="logo-text" aria-hidden="true">Course Platform</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="header-nav" aria-label="เมนูหลัก">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">หน้าแรก</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">คอร์สทั้งหมด</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">เกี่ยวกับเรา</a></li>
+        </ul>
+      </nav>
+
+      <!-- Search Bar -->
+      <div class="header-search">
+        <button class="search-icon" aria-label="ค้นหาคอร์ส" title="ค้นหาคอร์ส">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM18 18l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Menu -->
+      <button class="hamburger" id="hamburger" aria-label="เปิด/ปิดเมนู" aria-expanded="false" title="เปิด/ปิดเมนู">
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="hamburger-line" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-nav" aria-label="เมนูหลักสำหรับมือถือ">
+        <ul class="mobile-nav-menu">
+          <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link active" aria-current="page">หน้าแรก</a></li>
+          <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">คอร์สทั้งหมด</a></li>
+          <li class="mobile-nav-item"><a href="#" class="mobile-nav-link">เกี่ยวกับเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">คอร์สเรียนออนไลน์คุณภาพ</h1>
+        <p class="hero-subtitle">เรียนรู้ได้ทุกที่ ทุกเวลา</p>
+        <a href="#courses" class="hero-cta">ดูคอร์สทั้งหมด</a>
+      </div>
+    </section>
+
+    <!-- Course Catalog -->
+    <section id="courses" class="courses">
+      <div class="courses-container">
+        <div class="courses-header">
+          <h2 class="courses-title">คอร์สเรียนยอดนิยม</h2>
+          <p class="courses-subtitle">เลือกคอร์สที่คุณสนใจและเริ่มเรียนรู้ได้ทันที</p>
+        </div>
+
+        <div class="courses-grid">
+          <!-- Course Card 1 -->
+          <article class="course-card">
+            <div class="course-card-thumbnail">
+              <img src="https://via.placeholder.com/800x450/A78BFA/FFFFFF?text=Web+Development" alt="คอร์สพัฒนาเว็บไซต์สมัยใหม่">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">คอร์สพัฒนาเว็บไซต์สมัยใหม่</h3>
+              <p class="course-card-description">เรียนรู้การสร้างเว็บไซต์ด้วย HTML, CSS, JavaScript และ React ตั้งแต่พื้นฐานจนถึงขั้นสูง พร้อมโปรเจกต์จริง</p>
+              <div class="course-card-meta">
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon" aria-hidden="true">👤</span>
+                  <span><span class="sr-only">ผู้สอน: </span>อาจารย์สมชาย</span>
+                </span>
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon" aria-hidden="true">📹</span>
+                  <span><span class="sr-only">จำนวนวิดีโอ: </span>24 วิดีโอ</span>
+                </span>
+              </div>
+              <a href="pages/course-detail.html" class="course-card-button">เริ่มเรียน →</a>
+            </div>
+          </article>
+
+          <!-- Course Card 2 -->
+          <article class="course-card">
+            <div class="course-card-thumbnail">
+              <img src="https://via.placeholder.com/800x450/7C3AED/FFFFFF?text=Python+Programming" alt="Python สำหรับผู้เริ่มต้น">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">Python สำหรับผู้เริ่มต้น</h3>
+              <p class="course-card-description">เรียนรู้ภาษา Python ตั้งแต่เริ่มต้น เหมาะสำหรับผู้ที่ไม่เคยเขียนโปรแกรมมาก่อน พร้อมแบบฝึกหัดมากมาย</p>
+              <div class="course-card-meta">
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">👤</span>
+                  <span>อาจารย์วิชัย</span>
+                </span>
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">📹</span>
+                  <span>18 วิดีโอ</span>
+                </span>
+              </div>
+              <a href="pages/course-detail.html" class="course-card-button">เริ่มเรียน →</a>
+            </div>
+          </article>
+
+          <!-- Course Card 3 -->
+          <article class="course-card">
+            <div class="course-card-thumbnail">
+              <img src="https://via.placeholder.com/800x450/5B21B6/FFFFFF?text=Digital+Marketing" alt="Digital Marketing เบื้องต้น">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">Digital Marketing เบื้องต้น</h3>
+              <p class="course-card-description">เรียนรู้กลยุทธ์การตลาดออนไลน์ SEO, Social Media Marketing, และ Google Ads สำหรับธุรกิจยุคใหม่</p>
+              <div class="course-card-meta">
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">👤</span>
+                  <span>อาจารย์สุดา</span>
+                </span>
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">📹</span>
+                  <span>15 วิดีโอ</span>
+                </span>
+              </div>
+              <a href="pages/course-detail.html" class="course-card-button">เริ่มเรียน →</a>
+            </div>
+          </article>
+
+          <!-- Course Card 4 -->
+          <article class="course-card">
+            <div class="course-card-thumbnail">
+              <img src="https://via.placeholder.com/800x450/A78BFA/FFFFFF?text=UI+UX+Design" alt="UI/UX Design พื้นฐาน">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">UI/UX Design พื้นฐาน</h3>
+              <p class="course-card-description">เรียนรู้หลักการออกแบบ User Interface และ User Experience ด้วย Figma พร้อมเทคนิคการออกแบบที่ใช้งานได้จริง</p>
+              <div class="course-card-meta">
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">👤</span>
+                  <span>อาจารย์ปรีชา</span>
+                </span>
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">📹</span>
+                  <span>20 วิดีโอ</span>
+                </span>
+              </div>
+              <a href="pages/course-detail.html" class="course-card-button">เริ่มเรียน →</a>
+            </div>
+          </article>
+
+          <!-- Course Card 5 -->
+          <article class="course-card">
+            <div class="course-card-thumbnail">
+              <img src="https://via.placeholder.com/800x450/7C3AED/FFFFFF?text=Data+Science" alt="Data Science และ Machine Learning">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">Data Science และ Machine Learning</h3>
+              <p class="course-card-description">เรียนรู้การวิเคราะห์ข้อมูลและสร้างโมเดล Machine Learning ด้วย Python, Pandas และ Scikit-learn</p>
+              <div class="course-card-meta">
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">👤</span>
+                  <span>อาจารย์ธนา</span>
+                </span>
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">📹</span>
+                  <span>30 วิดีโอ</span>
+                </span>
+              </div>
+              <a href="pages/course-detail.html" class="course-card-button">เริ่มเรียน →</a>
+            </div>
+          </article>
+
+          <!-- Course Card 6 -->
+          <article class="course-card">
+            <div class="course-card-thumbnail">
+              <img src="https://via.placeholder.com/800x450/5B21B6/FFFFFF?text=Mobile+App" alt="สร้างแอพมือถือด้วย React Native">
+            </div>
+            <div class="course-card-content">
+              <h3 class="course-card-title">สร้างแอพมือถือด้วย React Native</h3>
+              <p class="course-card-description">เรียนรู้การพัฒนาแอพพลิเคชันมือถือที่ทำงานได้ทั้ง iOS และ Android ด้วย React Native และ JavaScript</p>
+              <div class="course-card-meta">
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">👤</span>
+                  <span>อาจารย์นิรันดร์</span>
+                </span>
+                <span class="course-card-meta-item">
+                  <span class="course-card-meta-icon">📹</span>
+                  <span>22 วิดีโอ</span>
+                </span>
+              </div>
+              <a href="pages/course-detail.html" class="course-card-button">เริ่มเรียน →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Component -->
+  <footer id="footer" class="footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section footer-about">
+        <h3 class="footer-heading">เกี่ยวกับเรา</h3>
+        <p class="footer-text">
+          แพลตฟอร์มคอร์สวิดีโอออนไลน์ที่ให้คุณเรียนรู้ได้ทุกที่ ทุกเวลา 
+          พร้อมคอร์สคุณภาพจากผู้เชี่ยวชาญในสาขาต่างๆ
+        </p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section footer-links">
+        <h3 class="footer-heading">ลิงก์ด่วน</h3>
+        <ul class="footer-menu">
+          <li class="footer-menu-item"><a href="index.html" class="footer-link">หน้าแรก</a></li>
+          <li class="footer-menu-item"><a href="index.html" class="footer-link">คอร์สทั้งหมด</a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-link">เกี่ยวกับเรา</a></li>
+          <li class="footer-menu-item"><a href="#" class="footer-link">ติดต่อเรา</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info Section -->
+      <div class="footer-section footer-contact">
+        <h3 class="footer-heading">ติดต่อเรา</h3>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M3 4h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 5l-8 6-8-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span><span class="sr-only">อีเมล: </span>info@courseplatform.com</span>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M18 13.5v2.5a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 7 14.5a19.5 19.5 0 0 1-5-5A19.79 19.79 0 0 1 0 .82 2 2 0 0 1 2 0h2.5a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L5.5 7.5a16 16 0 0 0 5 5l.86-1.25a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 18 13.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span><span class="sr-only">โทรศัพท์: </span>02-123-4567</span>
+          </li>
+          <li class="footer-contact-item">
+            <svg class="footer-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M10 0C6.13 0 3 3.13 3 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" fill="currentColor"/>
+            </svg>
+            <span><span class="sr-only">ที่อยู่: </span>กรุงเทพมหานคร ประเทศไทย</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="footer-copyright">© 2024 Course Platform. All rights reserved.</p>
+        
+        <!-- Social Media Icons -->
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

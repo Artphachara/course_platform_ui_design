@@ -1,0 +1,615 @@
+/* ===================================
+   Cross-Browser Compatibility Fixes
+   Video Course Platform
+   =================================== */
+
+/* ===================================
+   CSS Variables Fallbacks for IE11
+   =================================== */
+
+/* Note: IE11 doesn't support CSS variables, but since this is a modern project
+   targeting modern browsers (Chrome, Firefox, Safari, Edge), we'll focus on
+   ensuring compatibility with these browsers. */
+
+/* ===================================
+   Flexbox Fixes
+   =================================== */
+
+/* Fix for older Safari versions (< 11) */
+.flex,
+.header-container,
+.nav-menu,
+.footer-bottom-container,
+.course-card-meta,
+.video-navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.items-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* ===================================
+   Grid Layout Fixes
+   =================================== */
+
+/* Ensure grid works in older browsers */
+.grid,
+.courses-grid,
+.footer-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+/* Safari gap property fix (< 14.1) */
+@supports not (gap: 1rem) {
+  .grid,
+  .courses-grid {
+    margin: calc(var(--spacing-lg) / -2);
+  }
+  
+  .grid > *,
+  .courses-grid > * {
+    margin: calc(var(--spacing-lg) / 2);
+  }
+  
+  .footer-container {
+    margin: calc(var(--spacing-2xl) / -2);
+  }
+  
+  .footer-container > * {
+    margin: calc(var(--spacing-2xl) / 2);
+  }
+}
+
+/* ===================================
+   Aspect Ratio Fixes
+   =================================== */
+
+/* Fallback for browsers that don't support aspect-ratio property */
+@supports not (aspect-ratio: 16 / 9) {
+  .course-card-thumbnail,
+  .course-thumbnail {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+  }
+  
+  .course-card-thumbnail img,
+  .course-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ===================================
+   Smooth Scrolling Fixes
+   =================================== */
+
+/* Safari smooth scroll fix */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ===================================
+   Transform and Transition Fixes
+   =================================== */
+
+/* Add vendor prefixes for transforms */
+.course-card:hover,
+.card:hover {
+  -webkit-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+.btn-primary:hover,
+.hero-cta:hover {
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.video-item:hover,
+.playlist-item:hover {
+  -webkit-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* ===================================
+   Backdrop Filter Fixes
+   =================================== */
+
+/* Safari backdrop-filter support */
+.mobile-menu::before {
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* ===================================
+   Line Clamp Fixes
+   =================================== */
+
+/* Ensure line-clamp works across browsers */
+.course-card-title,
+.course-card-description,
+.video-title,
+.playlist-item-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.course-card-description {
+  -webkit-line-clamp: 3;
+}
+
+/* ===================================
+   Object-fit Fixes
+   =================================== */
+
+/* Fallback for older browsers that don't support object-fit */
+@supports not (object-fit: cover) {
+  .course-card-thumbnail img,
+  .course-thumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ===================================
+   Sticky Position Fixes
+   =================================== */
+
+/* Safari sticky position fix */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+/* ===================================
+   Font Smoothing
+   =================================== */
+
+/* Consistent font rendering across browsers */
+body,
+button,
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ===================================
+   Button and Input Resets
+   =================================== */
+
+/* Remove default button styles in Safari */
+button,
+.btn,
+.hamburger {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Remove default focus outline in Firefox */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* ===================================
+   Scrollbar Styling
+   =================================== */
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.playlist-items::-webkit-scrollbar,
+.mobile-menu::-webkit-scrollbar {
+  width: 8px;
+}
+
+.playlist-items::-webkit-scrollbar-track,
+.mobile-menu::-webkit-scrollbar-track {
+  background: var(--color-gray-200);
+  border-radius: 4px;
+}
+
+.playlist-items::-webkit-scrollbar-thumb,
+.mobile-menu::-webkit-scrollbar-thumb {
+  background: var(--color-gray-400);
+  border-radius: 4px;
+}
+
+.playlist-items::-webkit-scrollbar-thumb:hover,
+.mobile-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray-600);
+}
+
+/* Firefox scrollbar styling */
+.playlist-items,
+.mobile-menu {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-400) var(--color-gray-200);
+}
+
+/* ===================================
+   Video Element Fixes
+   =================================== */
+
+/* Ensure video fills container properly */
+.video-player {
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* Remove default video controls styling in Safari */
+.video-player::-webkit-media-controls {
+  /* Keep default controls but ensure they work properly */
+}
+
+/* ===================================
+   Animation Fixes
+   =================================== */
+
+/* Ensure animations work with vendor prefixes */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@-webkit-keyframes spinner-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* ===================================
+   Gradient Fixes
+   =================================== */
+
+/* Ensure gradients work in older browsers */
+.hero {
+  background: -webkit-linear-gradient(135deg, var(--color-purple-light) 0%, var(--color-purple-primary) 100%);
+  background: -o-linear-gradient(135deg, var(--color-purple-light) 0%, var(--color-purple-primary) 100%);
+  background: linear-gradient(135deg, var(--color-purple-light) 0%, var(--color-purple-primary) 100%);
+}
+
+.video-thumbnail-small,
+.playlist-item-thumbnail {
+  background: -webkit-linear-gradient(135deg, var(--color-purple-light), var(--color-purple-primary));
+  background: -o-linear-gradient(135deg, var(--color-purple-light), var(--color-purple-primary));
+  background: linear-gradient(135deg, var(--color-purple-light), var(--color-purple-primary));
+}
+
+/* ===================================
+   Calc() Function Fixes
+   =================================== */
+
+/* Ensure calc() works properly in all browsers */
+.video-player-container {
+  padding-bottom: 56.25%;
+  padding-bottom: -webkit-calc(9 / 16 * 100%);
+  padding-bottom: calc(9 / 16 * 100%);
+}
+
+/* ===================================
+   Border Radius Fixes
+   =================================== */
+
+/* Ensure border-radius works with overflow in Safari */
+.course-card,
+.video-player-container,
+.playlist-sidebar {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: radial-gradient(white, black);
+}
+
+/* ===================================
+   Z-index Fixes
+   =================================== */
+
+/* Ensure proper stacking context */
+.header {
+  z-index: 1000;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.mobile-menu {
+  z-index: 999;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* ===================================
+   Touch Action Fixes
+   =================================== */
+
+/* Improve touch scrolling on mobile devices */
+.playlist-items,
+.mobile-menu {
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+/* ===================================
+   User Select Fixes
+   =================================== */
+
+/* Prevent text selection on interactive elements */
+button,
+.btn,
+.hamburger,
+.nav-link,
+.course-card-button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ===================================
+   Will-change Optimization
+   =================================== */
+
+/* Optimize animations for better performance */
+.course-card,
+.btn,
+.hamburger-line,
+.mobile-menu {
+  will-change: transform;
+}
+
+.course-card:hover,
+.btn:hover {
+  will-change: transform, box-shadow;
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+
+@media print {
+  /* Hide non-essential elements when printing */
+  .header,
+  .footer,
+  .mobile-menu,
+  .hamburger,
+  .video-navigation,
+  .playlist-sidebar {
+    display: none !important;
+  }
+  
+  /* Ensure content is visible */
+  body {
+    padding-top: 0;
+  }
+  
+  /* Optimize for print */
+  .course-card,
+  .video-item {
+    page-break-inside: avoid;
+  }
+  
+  /* Remove shadows and transitions for print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ===================================
+   High Contrast Mode Support
+   =================================== */
+
+@media (prefers-contrast: high) {
+  /* Increase contrast for better accessibility */
+  .btn-primary,
+  .hero-cta {
+    border: 2px solid var(--color-white);
+  }
+  
+  .nav-link,
+  .footer-link {
+    text-decoration: underline;
+  }
+  
+  .course-card {
+    border-width: 2px;
+  }
+}
+
+/* ===================================
+   Reduced Motion Support
+   =================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable animations for users who prefer reduced motion */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .course-card:hover,
+  .btn:hover,
+  .video-item:hover {
+    transform: none !important;
+  }
+}
+
+/* ===================================
+   Dark Mode Support (Future Enhancement)
+   =================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Currently not implemented, but prepared for future dark mode support */
+  /* This ensures the site respects user preferences */
+}
+
+/* ===================================
+   Browser-Specific Fixes
+   =================================== */
+
+/* Firefox-specific fixes */
+@-moz-document url-prefix() {
+  /* Fix button padding in Firefox */
+  button,
+  .btn {
+    padding-top: calc(var(--spacing-md) + 1px);
+    padding-bottom: calc(var(--spacing-md) - 1px);
+  }
+  
+  /* Fix select dropdown in Firefox */
+  select {
+    text-indent: 0.01px;
+    text-overflow: '';
+  }
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+  /* Fix input appearance in Safari */
+  input[type="search"] {
+    -webkit-appearance: textfield;
+  }
+  
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+}
+
+/* Edge-specific fixes */
+@supports (-ms-ime-align: auto) {
+  /* Fix flexbox issues in older Edge versions */
+  .flex {
+    display: -ms-flexbox;
+  }
+}
+
+/* ===================================
+   iOS Safari Fixes
+   =================================== */
+
+/* Fix 100vh issue on iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  .mobile-menu {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Prevent zoom on input focus in iOS */
+@media screen and (max-width: 767px) {
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Fix tap highlight color on iOS */
+* {
+  -webkit-tap-highlight-color: rgba(124, 58, 237, 0.1);
+}
+
+/* ===================================
+   Performance Optimizations
+   =================================== */
+
+/* Use GPU acceleration for better performance */
+.course-card,
+.btn,
+.video-item,
+.playlist-item {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Optimize repaints */
+.header {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+/* ===================================
+   Font Loading Optimization
+   =================================== */
+
+/* Ensure fonts load properly across browsers */
+@font-face {
+  font-display: swap;
+}
+
+/* Prevent FOIT (Flash of Invisible Text) */
+body {
+  font-display: swap;
+}

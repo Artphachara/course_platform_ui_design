@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เล่นวิดีโอ - Video Course Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/browser-compatibility.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="hamburger" id="hamburgerBtn" aria-label="เปิดเมนู">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="logo">
+                    <a href="../index.html">Video Course Platform</a>
+                </div>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html">หน้าแรก</a></li>
+                        <li><a href="../index.html#courses" class="active">คอร์สทั้งหมด</a></li>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="search-bar">
+                    <input type="search" placeholder="ค้นหาคอร์ส..." aria-label="ค้นหาคอร์ส">
+                    <button type="submit" aria-label="ค้นหา">🔍</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-container">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item"><a href="../index.html">หน้าแรก</a></li>
+                    <li class="breadcrumb-item"><a href="../index.html#courses">คอร์สทั้งหมด</a></li>
+                    <li class="breadcrumb-item"><a href="course-detail.html">พื้นฐาน JavaScript สำหรับผู้เริ่มต้น</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">แนะนำคอร์สและเตรียมความพร้อม</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="video-player-layout">
+            <!-- Main Video Section -->
+            <div class="video-main-section">
+                <!-- Video Player -->
+                <div class="video-player-wrapper">
+                    <div class="video-player-container">
+                        <video class="video-player" controls poster="https://via.placeholder.com/1280x720/A78BFA/FFFFFF?text=Video+Thumbnail">
+                            <source src="#" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Video Info Section -->
+                <div class="video-info-section">
+                    <h1 class="video-info-title">แนะนำคอร์สและเตรียมความพร้อม</h1>
+                    <div class="video-info-description">
+                        <p>ในวิดีโอนี้เราจะมาทำความรู้จักกับคอร์ส JavaScript สำหรับผู้เริ่มต้นกัน คุณจะได้เรียนรู้ว่าคอร์สนี้มีเนื้อหาอะไรบ้าง และควรเตรียมตัวอย่างไรก่อนเริ่มเรียน</p>
+                        <p>เราจะพูดถึงเครื่องมือที่จำเป็น การติดตั้ง และแนวทางการเรียนรู้ที่มีประสิทธิภาพ เพื่อให้คุณได้รับประโยชน์สูงสุดจากคอร์สนี้</p>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div class="video-navigation">
+                        <button class="video-nav-btn video-nav-prev" id="prevVideoBtn" disabled>
+                            <span class="video-nav-icon">←</span>
+                            <span class="video-nav-text">ก่อนหน้า</span>
+                        </button>
+                        <button class="video-nav-btn video-nav-next" id="nextVideoBtn">
+                            <span class="video-nav-text">ถัดไป</span>
+                            <span class="video-nav-icon">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Playlist Sidebar -->
+            <aside class="playlist-sidebar">
+                <div class="playlist-header">
+                    <h2 class="playlist-title">เนื้อหาในคอร์ส</h2>
+                    <span class="playlist-count">15 วิดีโอ</span>
+                </div>
+
+                <div class="playlist-items">
+                    <!-- Playlist Item 1 - Active -->
+                    <div class="playlist-item active" data-video-id="1">
+                        <div class="playlist-item-number">1</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">แนะนำคอร์สและเตรียมความพร้อม</h3>
+                            <span class="playlist-item-duration">10:30</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 2 -->
+                    <div class="playlist-item" data-video-id="2">
+                        <div class="playlist-item-number">2</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">ติดตั้ง Tools และ Environment</h3>
+                            <span class="playlist-item-duration">15:45</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 3 -->
+                    <div class="playlist-item" data-video-id="3">
+                        <div class="playlist-item-number">3</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">ตัวแปรและชนิดข้อมูลใน JavaScript</h3>
+                            <span class="playlist-item-duration">22:15</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 4 -->
+                    <div class="playlist-item" data-video-id="4">
+                        <div class="playlist-item-number">4</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">Operators และการคำนวณ</h3>
+                            <span class="playlist-item-duration">18:30</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 5 -->
+                    <div class="playlist-item" data-video-id="5">
+                        <div class="playlist-item-number">5</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">Conditions: If, Else, Switch</h3>
+                            <span class="playlist-item-duration">25:20</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 6 -->
+                    <div class="playlist-item" data-video-id="6">
+                        <div class="playlist-item-number">6</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">Loops: For, While, Do-While</h3>
+                            <span class="playlist-item-duration">20:45</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 7 -->
+                    <div class="playlist-item" data-video-id="7">
+                        <div class="playlist-item-number">7</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">Functions และการใช้งาน</h3>
+                            <span class="playlist-item-duration">28:10</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 8 -->
+                    <div class="playlist-item" data-video-id="8">
+                        <div class="playlist-item-number">8</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">Arrays และการจัดการข้อมูล</h3>
+                            <span class="playlist-item-duration">24:55</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 9 -->
+                    <div class="playlist-item" data-video-id="9">
+                        <div class="playlist-item-number">9</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">Objects และ Properties</h3>
+                            <span class="playlist-item-duration">21:40</span>
+                        </div>
+                    </div>
+
+                    <!-- Playlist Item 10 -->
+                    <div class="playlist-item" data-video-id="10">
+                        <div class="playlist-item-number">10</div>
+                        <div class="playlist-item-thumbnail">
+                            <div class="playlist-item-play-icon">▶</div>
+                        </div>
+                        <div class="playlist-item-info">
+                            <h3 class="playlist-item-title">DOM Manipulation พื้นฐาน</h3>
+                            <span class="playlist-item-duration">26:30</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>เกี่ยวกับเรา</h4>
+                    <p>แพลตฟอร์มเรียนรู้ออนไลน์ที่มีคอร์สคุณภาพสูง เรียนได้ทุกที่ ทุกเวลา</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>ลิงก์ด่วน</h4>
+                    <ul>
+                        <li><a href="../index.html">หน้าแรก</a></li>
+                        <li><a href="../index.html#courses">คอร์สทั้งหมด</a></li>
+                        <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>ติดต่อเรา</h4>
+                    <ul>
+                        <li>📧 info@example.com</li>
+                        <li>📱 02-xxx-xxxx</li>
+                        <li>📍 กรุงเทพมหานคร ประเทศไทย</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Video Course Platform. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
