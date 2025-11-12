@@ -21,17 +21,17 @@
 
 ## 📋 สารบัญ
 
-- [ภาพรวมโปรเจกต์](#ภาพรวมโปรเจกต์)
-- [คุณสมบัติหลัก](#คุณสมบัติหลัก)
-- [เทคโนโลยีที่ใช้](#เทคโนโลยีที่ใช้)
-- [โครงสร้างโปรเจกต์](#โครงสร้างโปรเจกต์)
-- [การติดตั้งและใช้งาน](#การติดตั้งและใช้งาน)
-- [หน้าต่างๆ ในเว็บไซต์](#หน้าต่างๆ-ในเว็บไซต์)
-- [Design System](#design-system)
-- [Responsive Design](#responsive-design)
-- [Browser Compatibility](#browser-compatibility)
-- [การนำไปพัฒนาใน WordPress](#การนำไปพัฒนาใน-wordpress)
-- [เอกสารเพิ่มเติม](#เอกสารเพิ่มเติม)
+- [ภาพรวมโปรเจกต์](#-ภาพรวมโปรเจกต์)
+- [คุณสมบัติหลัก](#-คุณสมบัติหลัก)
+- [เทคโนโลยีที่ใช้](#-เทคโนโลยีที่ใช้)
+- [โครงสร้างโปรเจกต์](#-โครงสร้างโปรเจกต์)
+- [การติดตั้งและใช้งาน](#-การติดตั้งและใช้งาน)
+- [หน้าต่างๆ ในเว็บไซต์](#-หน้าต่างๆ-ในเว็บไซต์)
+- [Design System](#-design-system)
+- [Responsive Design](#-responsive-design)
+- [Browser Compatibility](#-browser-compatibility)
+- [การนำไปพัฒนาใน WordPress](#-การนำไปพัฒนาใน-wordpress)
+- [เอกสารเพิ่มเติม](#-เอกสารเพิ่มเติม)
 
 ## 🎯 ภาพรวมโปรเจกต์
 
@@ -54,30 +54,35 @@
 ## ✨ คุณสมบัติหลัก
 
 ### 1. หน้าแสดงรายการคอร์ส (Course Catalog)
+
 - แสดงคอร์สทั้งหมดในรูปแบบ grid layout
 - Course cards พร้อม thumbnail, title, description และข้อมูลเบื้องต้น
 - Hover effects และ animations
 - Responsive grid (3 columns → 2 columns → 1 column)
 
 ### 2. หน้ารายละเอียดคอร์ส (Course Detail)
+
 - แสดงข้อมูลคอร์สแบบละเอียด
 - รายการวิดีโอทั้งหมดในคอร์ส
 - Breadcrumb navigation
 - Video list พร้อม thumbnail และ duration
 
 ### 3. หน้าเล่นวิดีโอ (Video Player)
+
 - Video player พร้อม playlist sidebar
 - Previous/Next navigation
 - Active video indicator
 - Responsive layout (sidebar → bottom playlist บน mobile)
 
 ### 4. Global Components
+
 - Responsive header พร้อม navigation
 - Mobile hamburger menu
 - Footer พร้อมข้อมูลติดต่อ
 - Breadcrumb navigation
 
 ### 5. Design System
+
 - Color palette (Purple & White theme)
 - Typography system
 - Spacing และ layout utilities
@@ -114,6 +119,7 @@
 
 > ⚡ **Zero dependencies!** โปรเจกต์นี้ไม่ต้องการ build tools, package manager หรือ framework ใดๆ  
 > เพียงแค่เปิดไฟล์ HTML ในเบราว์เซอร์ก็ใช้งานได้ทันที!
+
 
 ## 📁 โครงสร้างโปรเจกต์
 
@@ -162,6 +168,7 @@ video-course-platform/
 <td width="50%">
 
 **Option 1: Direct Open** 🖱️
+
 ```bash
 # Clone และเปิดไฟล์
 git clone https://github.com/yourusername/video-course-platform.git
@@ -175,6 +182,7 @@ cd video-course-platform
 <td width="50%">
 
 **Option 2: Local Server** 🌐
+
 ```bash
 # Python
 python -m http.server 8000
@@ -185,6 +193,7 @@ npx serve
 # PHP
 php -S localhost:8000
 ```
+
 เปิดเบราว์เซอร์: `http://localhost:8000`
 
 </td>
@@ -206,13 +215,14 @@ php -S localhost:8000
 
 ```bash
 # Clone repository
-git clone [repository-url]
+git clone https://github.com/yourusername/video-course-platform.git
 cd video-course-platform
 ```
 
 #### 2. เปิดไฟล์ในเบราว์เซอร์
 
 **วิธีที่ 1: เปิดไฟล์โดยตรง**
+
 - Double-click ที่ `index.html`
 - หรือคลิกขวา → Open with → เลือกเบราว์เซอร์
 
@@ -238,29 +248,6 @@ php -S localhost:8000
 - **เล่นวิดีโอ**: `pages/video-player.html`
 - **Style Guide**: `pages/style-guide.html`
 
-## 📸 Screenshots
-
-Screenshots ของแต่ละหน้าจะถูกเก็บไว้ใน `images/screenshots/` directory
-
-> **หมายเหตุ**: ดูคู่มือการถ่าย screenshots ได้ที่ [SCREENSHOTS.md](SCREENSHOTS.md)
-
-### วิธีการดู Screenshots
-
-1. เปิดไฟล์ HTML ในเบราว์เซอร์เพื่อดูหน้าจริง
-2. ดู screenshots ใน `images/screenshots/` (ถ้ามี)
-3. ดู mockups ใน `pages/style-guide.html`
-
-### Screenshots ที่ควรมี
-
-- Course Catalog (Desktop, Tablet, Mobile)
-- Course Detail (Desktop, Mobile)
-- Video Player (Desktop, Mobile)
-- Style Guide (Color Palette, Typography, Components)
-- Global Components (Header, Footer, Navigation)
-
-สำหรับคำแนะนำการถ่าย screenshots โดยละเอียด ดูที่ [SCREENSHOTS.md](SCREENSHOTS.md)
-
----
 
 ## 📱 หน้าต่างๆ ในเว็บไซต์
 
@@ -269,85 +256,41 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 หน้าแสดงรายการคอร์สทั้งหมด
 
 **คุณสมบัติ:**
+
 - Hero section พร้อม gradient background
 - Course grid แบบ responsive (3/2/1 columns)
 - Course cards พร้อม hover effects
 - Loading states และ animations
-
-**Screenshot:**
-```
-┌─────────────────────────────────────────┐
-│         Header (Logo + Nav)             │
-├─────────────────────────────────────────┤
-│                                         │
-│         Hero Section                    │
-│    "คอร์สเรียนออนไลน์คุณภาพ"            │
-│                                         │
-├─────────────────────────────────────────┤
-│  [Card]    [Card]    [Card]            │
-│  [Card]    [Card]    [Card]            │
-├─────────────────────────────────────────┤
-│         Footer                          │
-└─────────────────────────────────────────┘
-```
 
 ### 2. Course Detail (pages/course-detail.html)
 
 หน้ารายละเอียดคอร์สและรายการวิดีโอ
 
 **คุณสมบัติ:**
+
 - Breadcrumb navigation
 - Course header พร้อม thumbnail และข้อมูล
 - Video list พร้อม play icons
 - Responsive layout
-
-**Screenshot:**
-```
-┌─────────────────────────────────────────┐
-│  Home > คอร์สทั้งหมด > ชื่อคอร์ส        │
-├─────────────────────────────────────────┤
-│  [Thumbnail]  Course Title              │
-│               ⭐⭐⭐⭐⭐                   │
-│               Instructor | 15 videos    │
-├─────────────────────────────────────────┤
-│  Course Description...                  │
-├─────────────────────────────────────────┤
-│  เนื้อหาในคอร์ส                         │
-│  [▶] 1. Video Title 1      [10:30]     │
-│  [▶] 2. Video Title 2      [15:45]     │
-│  [▶] 3. Video Title 3      [12:20]     │
-└─────────────────────────────────────────┘
-```
 
 ### 3. Video Player (pages/video-player.html)
 
 หน้าเล่นวิดีโอพร้อม playlist
 
 **คุณสมบัติ:**
+
 - Video player (16:9 aspect ratio)
 - Playlist sidebar (desktop) / bottom (mobile)
 - Previous/Next navigation
 - Active video indicator
 - Video navigation JavaScript
 
-**Screenshot (Desktop):**
-```
-┌──────────────────────────┬──────────────┐
-│                          │  Playlist    │
-│    Video Player          │  [Active]    │
-│    (16:9)                │  [ Video ]   │
-│                          │  [ Video ]   │
-├──────────────────────────┤              │
-│  Video Title             │              │
-│  [← Prev]  [Next →]      │              │
-└──────────────────────────┴──────────────┘
-```
-
 ### 4. Style Guide (pages/style-guide.html)
 
 เอกสาร design system และ component library
 
 **เนื้อหา:**
+
 - Color palette
 - Typography scale
 - Spacing system
@@ -362,6 +305,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 <br>
 
 **Primary Colors**
+
 ```css
 --purple-primary: #7C3AED;  /* Main brand color */
 --purple-dark:    #5B21B6;  /* Hover states */
@@ -370,6 +314,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 ```
 
 **Neutral Colors**
+
 ```css
 --white:    #FFFFFF;  /* Backgrounds */
 --gray-50:  #F9FAFB;  /* Light backgrounds */
@@ -403,12 +348,14 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 <br>
 
 **Font Families**
+
 ```css
 --font-primary: 'Inter', 'Noto Sans Thai', sans-serif;      /* Body text */
 --font-heading: 'Poppins', 'Noto Sans Thai', sans-serif;    /* Headings */
 ```
 
 **Font Scale**
+
 | Size | Value | Usage |
 |------|-------|-------|
 | `--text-xs` | 0.75rem (12px) | Small labels |
@@ -428,6 +375,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 <br>
 
 **8px Base Unit**
+
 ```css
 --spacing-xs:  0.25rem;  /* 4px  - Tight spacing */
 --spacing-sm:  0.5rem;   /* 8px  - Small gaps */
@@ -441,6 +389,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 </details>
 
 > 📖 **ดู Style Guide แบบเต็ม:** เปิดไฟล์ [`pages/style-guide.html`](pages/style-guide.html) เพื่อดู component library ทั้งหมด
+
 
 ## 📐 Responsive Design
 
@@ -568,6 +517,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 
 > 🧪 **ดูรายงานการทดสอบ:** [Browser Compatibility Report](BROWSER-COMPATIBILITY-REPORT.md)
 
+
 ## 🔧 การนำไปพัฒนาใน WordPress
 
 <div align="center">
@@ -585,6 +535,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 <td width="50%">
 
 **Essential Plugins**
+
 - 🎓 **LearnDash** / **Tutor LMS** - LMS system
 - 🎨 **Elementor Pro** - Page builder
 - 📝 **Advanced Custom Fields** - Custom fields
@@ -594,6 +545,7 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 <td width="50%">
 
 **Optional Plugins**
+
 - 🚀 **WP Rocket** - Caching
 - 🖼️ **Smush** - Image optimization
 - 🔍 **Yoast SEO** - SEO optimization
@@ -672,19 +624,6 @@ register_post_type('video', [
 | [Assets README](images/ASSETS-README.md) | คำอธิบาย assets และ image specs |
 | [Style Guide](pages/style-guide.html) | Component library และ design system (HTML) |
 
-### 📂 โครงสร้างเอกสาร
-
-```
-docs/
-├── README.md                           # เอกสารหลัก
-├── CHANGELOG.md                        # Version history
-├── CONTRIBUTING.md                     # Contribution guide
-├── SCREENSHOTS.md                      # Screenshot guide
-├── BROWSER-COMPATIBILITY-REPORT.md     # Browser testing
-├── BROWSER-TESTING-CHECKLIST.md        # Test checklist
-├── RESPONSIVE-TESTING-REPORT.md        # Responsive testing
-└── WORDPRESS-IMPLEMENTATION-GUIDE.md   # WordPress guide
-```
 
 ## 🎯 Features และ Highlights
 
@@ -747,6 +686,7 @@ git push origin feature/amazing-feature
 อ่านคู่มือการมีส่วนร่วมแบบละเอียดได้ที่ **[CONTRIBUTING.md](CONTRIBUTING.md)**
 
 รวมถึง:
+
 - ✅ Coding standards (HTML, CSS, JavaScript)
 - ✅ Design guidelines
 - ✅ Testing checklist
@@ -811,6 +751,7 @@ git push origin feature/amazing-feature
 2. เปิด [Discussion](../../discussions) เพื่อหารือกับ community
 3. สร้าง [Feature Request Issue](../../issues/new) พร้อมรายละเอียด
 
+
 ## 🎯 Project Status
 
 <div align="center">
@@ -832,6 +773,7 @@ git push origin feature/amazing-feature
 <td width="50%">
 
 **✅ Core Features**
+
 - 🏠 3 main pages (Catalog, Detail, Player)
 - 🎨 Style guide & component library
 - 📱 Responsive design (3 breakpoints)
@@ -841,6 +783,7 @@ git push origin feature/amazing-feature
 <td width="50%">
 
 **✅ Documentation**
+
 - ♿ Accessibility (WCAG 2.1 AA)
 - 📚 Complete documentation (8 files)
 - 🔧 WordPress implementation guide
@@ -883,24 +826,28 @@ git push origin feature/amazing-feature
 ## 🏆 Features Highlights
 
 ### Design
+
 - 🎨 Modern purple & white theme
 - 📱 Mobile-first responsive design
 - ✨ Smooth animations and transitions
 - 🎯 Consistent design system
 
 ### Development
+
 - 🚀 No dependencies (vanilla HTML/CSS/JS)
 - ⚡ Fast loading and performance
 - 🧩 Modular and reusable components
 - 📝 Well-documented code
 
 ### Accessibility
+
 - ♿ WCAG 2.1 AA compliant
 - ⌨️ Keyboard navigation
 - 🎯 Focus indicators
 - 📱 Touch-friendly (44px targets)
 
 ### Documentation
+
 - 📚 Comprehensive README
 - 🔧 WordPress implementation guide
 - 🧪 Testing reports and checklists
@@ -926,17 +873,55 @@ git push origin feature/amazing-feature
 
 <div align="center">
 
+## 🌟 Show Your Support
+
+ถ้าโปรเจกต์นี้มีประโยชน์ กรุณา **star ⭐** repository นี้!
+
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/video-course-platform?style=social)](https://github.com/yourusername/video-course-platform/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/video-course-platform?style=social)](https://github.com/yourusername/video-course-platform/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/yourusername/video-course-platform?style=social)](https://github.com/yourusername/video-course-platform/watchers)
+
+---
+
+### 📚 Quick Links
+
+[📖 Documentation](#-เอกสารเพิ่มเติม) • 
+[🐛 Report Bug](../../issues) • 
+[💡 Request Feature](../../issues) • 
+[🤝 Contribute](CONTRIBUTING.md) • 
+[📝 Changelog](CHANGELOG.md)
+
+---
+
+### 🏗️ Built With
+
+<table>
+<tr>
+<td align="center">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="40" height="40" alt="HTML5" />
+<br><sub>HTML5</sub>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="40" height="40" alt="CSS3" />
+<br><sub>CSS3</sub>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40" height="40" alt="JavaScript" />
+<br><sub>JavaScript</sub>
+</td>
+<td align="center">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-plain.svg" width="40" height="40" alt="WordPress" />
+<br><sub>WordPress</sub>
+</td>
+</tr>
+</table>
+
+---
+
 **สร้างด้วย ❤️ สำหรับการพัฒนา WordPress Video Course Platform**
 
 **Version 1.0.0** | **Last Updated: November 2024**
 
-[📖 Documentation](#เอกสารเพิ่มเติม) • [🐛 Report Bug](../../issues) • [💡 Request Feature](../../issues) • [🤝 Contribute](CONTRIBUTING.md)
-
----
-
-⭐ ถ้าโปรเจกต์นี้มีประโยชน์ อย่าลืม star repository นี้!
+Copyright © 2024 Video Course Platform. All rights reserved.
 
 </div>
-#   c o u r s e _ p l a t f o r m _ u i _ d e s i g n 
- 
- 
