@@ -1,6 +1,23 @@
-# Video Course Platform - Design Mockup
+<div align="center">
 
-แพลตฟอร์มคอร์สวิดีโอออนไลน์ที่ออกแบบด้วย HTML, CSS และ JavaScript เพื่อใช้เป็น mockup อ้างอิงสำหรับการพัฒนาใน WordPress
+# 🎓 Video Course Platform - Design Mockup
+
+### แพลตฟอร์มคอร์สวิดีโอออนไลน์ที่ออกแบบด้วย HTML, CSS และ JavaScript
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://wordpress.org/)
+
+[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg?style=flat-square)](CHANGELOG.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+
+[Features](#-คุณสมบัติหลัก) • [Demo](#-quick-start) • [Documentation](#-เอกสารเพิ่มเติม) • [WordPress Guide](WORDPRESS-IMPLEMENTATION-GUIDE.md) • [Contributing](CONTRIBUTING.md)
+
+</div>
+
+---
 
 ## 📋 สารบัญ
 
@@ -18,14 +35,21 @@
 
 ## 🎯 ภาพรวมโปรเจกต์
 
-โปรเจกต์นี้เป็น design mockup สำหรับแพลตฟอร์มคอร์สวิดีโอออนไลน์ที่พัฒนาด้วย HTML, CSS และ JavaScript แบบ vanilla เพื่อใช้เป็นแนวทางในการพัฒนาเว็บไซต์จริงด้วย WordPress ในอนาคต
+> **Design mockup สำหรับแพลตฟอร์มคอร์สวิดีโอออนไลน์** ที่พัฒนาด้วย HTML, CSS และ JavaScript แบบ vanilla เพื่อใช้เป็นแนวทางในการพัฒนาเว็บไซต์จริงด้วย WordPress
 
-### วัตถุประสงค์
+### 🎨 วัตถุประสงค์
 
-- สร้าง mockup ที่สามารถใช้งานได้จริงเพื่อทดสอบ UX/UI
-- กำหนด design system และ style guide ที่ชัดเจน
-- เป็นเอกสารอ้างอิงสำหรับทีมพัฒนา WordPress
-- ทดสอบ responsive design บนอุปกรณ์ต่างๆ
+- ✅ สร้าง mockup ที่สามารถใช้งานได้จริงเพื่อทดสอบ UX/UI
+- ✅ กำหนด design system และ style guide ที่ชัดเจน
+- ✅ เป็นเอกสารอ้างอิงสำหรับทีมพัฒนา WordPress
+- ✅ ทดสอบ responsive design บนอุปกรณ์ต่างๆ
+
+### 🌟 Highlights
+
+```
+🚀 No Dependencies    ⚡ Fast Loading    📱 Mobile First    ♿ Accessible
+🎨 Modern Design     🧩 Modular Code    📚 Well Documented  🔧 WordPress Ready
+```
 
 ## ✨ คุณสมบัติหลัก
 
@@ -61,13 +85,35 @@
 
 ## 🛠 เทคโนโลยีที่ใช้
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties, Flexbox, Grid
-- **JavaScript (Vanilla)** - ไม่ใช้ framework เพื่อความเรียบง่าย
-- **Google Fonts** - Inter, Noto Sans Thai, Poppins
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="48" height="48" alt="HTML5" />
+<br><strong>HTML5</strong>
+<br><sub>Semantic markup</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="48" height="48" alt="CSS3" />
+<br><strong>CSS3</strong>
+<br><sub>Grid, Flexbox, Variables</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
+<br><strong>JavaScript</strong>
+<br><sub>Vanilla JS (No frameworks)</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-plain.svg" width="48" height="48" alt="WordPress" />
+<br><strong>WordPress</strong>
+<br><sub>Target platform</sub>
+</td>
+</tr>
+</table>
 
-### ไม่มี Dependencies
-โปรเจกต์นี้ไม่ต้องการ build tools หรือ package manager เพียงแค่เปิดไฟล์ HTML ในเบราว์เซอร์
+### 🎯 ไม่มี Dependencies
+
+> ⚡ **Zero dependencies!** โปรเจกต์นี้ไม่ต้องการ build tools, package manager หรือ framework ใดๆ  
+> เพียงแค่เปิดไฟล์ HTML ในเบราว์เซอร์ก็ใช้งานได้ทันที!
 
 ## 📁 โครงสร้างโปรเจกต์
 
@@ -111,27 +157,48 @@ video-course-platform/
 
 ### ⚡ Quick Start
 
+<table>
+<tr>
+<td width="50%">
+
+**Option 1: Direct Open** 🖱️
 ```bash
-# 1. Clone โปรเจกต์
-git clone [repository-url]
+# Clone และเปิดไฟล์
+git clone https://github.com/yourusername/video-course-platform.git
 cd video-course-platform
 
-# 2. เปิดด้วย local server (แนะนำ)
-python -m http.server 8000
-# หรือ
-npx serve
-
-# 3. เปิดเบราว์เซอร์ไปที่
-http://localhost:8000
+# Double-click index.html
+# หรือ drag & drop ลงในเบราว์เซอร์
 ```
 
-**หรือ** เพียงแค่ double-click ที่ `index.html` เพื่อเปิดในเบราว์เซอร์
+</td>
+<td width="50%">
 
-### ความต้องการของระบบ
+**Option 2: Local Server** 🌐
+```bash
+# Python
+python -m http.server 8000
 
-- เบราว์เซอร์สมัยใหม่ (Chrome, Firefox, Safari, Edge)
-- ไม่ต้องการ web server (สามารถเปิดไฟล์ HTML โดยตรง)
-- ไม่ต้องการ Node.js, npm หรือ build tools
+# Node.js
+npx serve
+
+# PHP
+php -S localhost:8000
+```
+เปิดเบราว์เซอร์: `http://localhost:8000`
+
+</td>
+</tr>
+</table>
+
+### 📋 ความต้องการของระบบ
+
+| Requirement | Details |
+|------------|---------|
+| 🌐 Browser | Chrome 90+, Firefox 88+, Safari 14+, Edge 90+ |
+| 💻 Server | ไม่จำเป็น (สามารถเปิดไฟล์ HTML โดยตรง) |
+| 📦 Dependencies | ไม่มี (No Node.js, npm, or build tools required) |
+| 💾 Disk Space | < 5 MB |
 
 ### วิธีการใช้งาน
 
@@ -289,138 +356,286 @@ Screenshots ของแต่ละหน้าจะถูกเก็บไ�
 
 ## 🎨 Design System
 
-### Color Palette
+<details>
+<summary><strong>🎨 Color Palette</strong> (Click to expand)</summary>
 
+<br>
+
+**Primary Colors**
 ```css
-/* Primary Colors */
---purple-primary: #7C3AED;
---purple-dark: #5B21B6;
---purple-light: #A78BFA;
---purple-pale: #EDE9FE;
-
-/* Neutral Colors */
---white: #FFFFFF;
---gray-50: #F9FAFB;
---gray-200: #E5E7EB;
---gray-600: #4B5563;
---gray-900: #111827;
+--purple-primary: #7C3AED;  /* Main brand color */
+--purple-dark:    #5B21B6;  /* Hover states */
+--purple-light:   #A78BFA;  /* Accents */
+--purple-pale:    #EDE9FE;  /* Backgrounds */
 ```
 
-### Typography
-
+**Neutral Colors**
 ```css
-/* Font Families */
---font-primary: 'Inter', 'Noto Sans Thai', sans-serif;
---font-heading: 'Poppins', 'Noto Sans Thai', sans-serif;
-
-/* Font Sizes */
---text-xs: 0.75rem;    /* 12px */
---text-sm: 0.875rem;   /* 14px */
---text-base: 1rem;     /* 16px */
---text-lg: 1.125rem;   /* 18px */
---text-xl: 1.25rem;    /* 20px */
---text-2xl: 1.5rem;    /* 24px */
---text-3xl: 1.875rem;  /* 30px */
---text-4xl: 2.25rem;   /* 36px */
+--white:    #FFFFFF;  /* Backgrounds */
+--gray-50:  #F9FAFB;  /* Light backgrounds */
+--gray-200: #E5E7EB;  /* Borders */
+--gray-600: #4B5563;  /* Secondary text */
+--gray-900: #111827;  /* Primary text */
 ```
 
-### Spacing System
+<table>
+<tr>
+<td bgcolor="#7C3AED" width="80" height="40"></td>
+<td bgcolor="#5B21B6" width="80" height="40"></td>
+<td bgcolor="#A78BFA" width="80" height="40"></td>
+<td bgcolor="#EDE9FE" width="80" height="40"></td>
+<td bgcolor="#F9FAFB" width="80" height="40"></td>
+</tr>
+<tr>
+<td align="center"><sub>Primary</sub></td>
+<td align="center"><sub>Dark</sub></td>
+<td align="center"><sub>Light</sub></td>
+<td align="center"><sub>Pale</sub></td>
+<td align="center"><sub>Gray 50</sub></td>
+</tr>
+</table>
 
+</details>
+
+<details>
+<summary><strong>📝 Typography</strong> (Click to expand)</summary>
+
+<br>
+
+**Font Families**
 ```css
-/* 8px base unit */
---spacing-xs: 0.25rem;  /* 4px */
---spacing-sm: 0.5rem;   /* 8px */
---spacing-md: 1rem;     /* 16px */
---spacing-lg: 1.5rem;   /* 24px */
---spacing-xl: 2rem;     /* 32px */
---spacing-2xl: 3rem;    /* 48px */
---spacing-3xl: 4rem;    /* 64px */
+--font-primary: 'Inter', 'Noto Sans Thai', sans-serif;      /* Body text */
+--font-heading: 'Poppins', 'Noto Sans Thai', sans-serif;    /* Headings */
 ```
+
+**Font Scale**
+| Size | Value | Usage |
+|------|-------|-------|
+| `--text-xs` | 0.75rem (12px) | Small labels |
+| `--text-sm` | 0.875rem (14px) | Secondary text |
+| `--text-base` | 1rem (16px) | Body text |
+| `--text-lg` | 1.125rem (18px) | Large body |
+| `--text-xl` | 1.25rem (20px) | H4 |
+| `--text-2xl` | 1.5rem (24px) | H3 |
+| `--text-3xl` | 1.875rem (30px) | H2 |
+| `--text-4xl` | 2.25rem (36px) | H1 |
+
+</details>
+
+<details>
+<summary><strong>📏 Spacing System</strong> (Click to expand)</summary>
+
+<br>
+
+**8px Base Unit**
+```css
+--spacing-xs:  0.25rem;  /* 4px  - Tight spacing */
+--spacing-sm:  0.5rem;   /* 8px  - Small gaps */
+--spacing-md:  1rem;     /* 16px - Default spacing */
+--spacing-lg:  1.5rem;   /* 24px - Section spacing */
+--spacing-xl:  2rem;     /* 32px - Large sections */
+--spacing-2xl: 3rem;     /* 48px - Major sections */
+--spacing-3xl: 4rem;     /* 64px - Hero sections */
+```
+
+</details>
+
+> 📖 **ดู Style Guide แบบเต็ม:** เปิดไฟล์ [`pages/style-guide.html`](pages/style-guide.html) เพื่อดู component library ทั้งหมด
 
 ## 📐 Responsive Design
 
-### Breakpoints
+### 📱 Breakpoints
 
 ```css
 /* Mobile First Approach */
---breakpoint-sm: 640px;   /* Mobile landscape */
---breakpoint-md: 768px;   /* Tablet */
---breakpoint-lg: 1024px;  /* Desktop */
---breakpoint-xl: 1280px;  /* Large desktop */
+--breakpoint-sm: 640px;   /* 📱 Mobile landscape */
+--breakpoint-md: 768px;   /* 📱 Tablet */
+--breakpoint-lg: 1024px;  /* 💻 Desktop */
+--breakpoint-xl: 1280px;  /* 🖥️ Large desktop */
 ```
 
-### Responsive Behavior
+### 🔄 Responsive Behavior
 
-| Component | Mobile (<768px) | Tablet (768-1023px) | Desktop (1024px+) |
-|-----------|----------------|---------------------|-------------------|
-| Course Grid | 1 column | 2 columns | 3 columns |
-| Header | Hamburger menu | Hamburger menu | Full navigation |
-| Video Layout | Stacked | Stacked | Sidebar |
-| Typography | Smaller | Medium | Full size |
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>📱 Mobile<br>(&lt;768px)</th>
+<th>📱 Tablet<br>(768-1023px)</th>
+<th>💻 Desktop<br>(1024px+)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Course Grid</strong></td>
+<td>1 column</td>
+<td>2 columns</td>
+<td>3 columns</td>
+</tr>
+<tr>
+<td><strong>Header</strong></td>
+<td>Hamburger menu</td>
+<td>Hamburger menu</td>
+<td>Full navigation</td>
+</tr>
+<tr>
+<td><strong>Video Layout</strong></td>
+<td>Stacked</td>
+<td>Stacked</td>
+<td>Sidebar</td>
+</tr>
+<tr>
+<td><strong>Typography</strong></td>
+<td>Smaller</td>
+<td>Medium</td>
+<td>Full size</td>
+</tr>
+</tbody>
+</table>
 
-### ทดสอบแล้วบน
+### ✅ ทดสอบแล้วบน
 
-- ✅ Desktop: 1920px, 1366px, 1024px
-- ✅ Tablet: 768px, 834px
-- ✅ Mobile: 375px, 414px, 390px
+<table>
+<tr>
+<td align="center">
+<strong>💻 Desktop</strong><br>
+<sub>1920px, 1366px, 1024px</sub>
+</td>
+<td align="center">
+<strong>📱 Tablet</strong><br>
+<sub>768px, 834px, 1024px</sub>
+</td>
+<td align="center">
+<strong>📱 Mobile</strong><br>
+<sub>375px, 390px, 414px</sub>
+</td>
+</tr>
+</table>
+
+> 📊 **ดูรายงานการทดสอบ:** [Responsive Testing Report](RESPONSIVE-TESTING-REPORT.md)
 
 ## 🌐 Browser Compatibility
 
-### รองรับเบราว์เซอร์
+### ✅ รองรับเบราว์เซอร์
 
-- ✅ Chrome 90+ (Latest 2 versions)
-- ✅ Firefox 88+ (Latest 2 versions)
-- ✅ Safari 14+ (Latest 2 versions)
-- ✅ Edge 90+ (Latest 2 versions)
-- ✅ Mobile Safari (iOS 12+)
-- ✅ Chrome Mobile (Android 8+)
+<table>
+<tr>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" width="32" height="32" alt="Chrome" />
+<br><strong>Chrome</strong>
+<br><sub>90+</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" width="32" height="32" alt="Firefox" />
+<br><strong>Firefox</strong>
+<br><sub>88+</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" width="32" height="32" alt="Safari" />
+<br><strong>Safari</strong>
+<br><sub>14+</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" width="32" height="32" alt="Edge" />
+<br><strong>Edge</strong>
+<br><sub>90+</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" width="32" height="32" alt="iOS Safari" />
+<br><strong>iOS Safari</strong>
+<br><sub>12+</sub>
+</td>
+</tr>
+</table>
 
-### CSS Features ที่ใช้
+### 🎯 CSS Features ที่ใช้
 
-- CSS Custom Properties (Variables)
-- CSS Grid Layout
-- Flexbox
-- CSS Transitions & Animations
-- Media Queries
+- ✅ CSS Custom Properties (Variables)
+- ✅ CSS Grid Layout
+- ✅ Flexbox
+- ✅ CSS Transitions & Animations
+- ✅ Media Queries
+- ✅ Modern selectors (`:has()`, `:where()`)
 
-### Fallbacks
+### 🔧 Fallbacks & Polyfills
 
-- ใช้ `browser-compatibility.css` สำหรับ browser-specific fixes
-- Graceful degradation สำหรับเบราว์เซอร์เก่า
+```css
+/* browser-compatibility.css */
+- Browser-specific fixes
+- Graceful degradation
+- Vendor prefixes (where needed)
+```
+
+> 🧪 **ดูรายงานการทดสอบ:** [Browser Compatibility Report](BROWSER-COMPATIBILITY-REPORT.md)
 
 ## 🔧 การนำไปพัฒนาใน WordPress
 
-### Plugins ที่แนะนำ
+<div align="center">
 
-1. **LearnDash** หรือ **Tutor LMS** - จัดการคอร์สและวิดีโอ
-2. **Elementor** หรือ **Beaver Builder** - Page builder
-3. **Advanced Custom Fields (ACF)** - Custom fields
-4. **Custom Post Type UI** - สร้าง custom post types
+### 📖 [**WordPress Implementation Guide**](WORDPRESS-IMPLEMENTATION-GUIDE.md)
 
-### Custom Post Types ที่ต้องสร้าง
+คู่มือฉบับเต็มสำหรับการนำ mockup นี้ไปพัฒนาเป็น WordPress theme
+
+</div>
+
+### 🔌 Plugins ที่แนะนำ
+
+<table>
+<tr>
+<td width="50%">
+
+**Essential Plugins**
+- 🎓 **LearnDash** / **Tutor LMS** - LMS system
+- 🎨 **Elementor Pro** - Page builder
+- 📝 **Advanced Custom Fields** - Custom fields
+- 🎬 **Presto Player** - Video player
+
+</td>
+<td width="50%">
+
+**Optional Plugins**
+- 🚀 **WP Rocket** - Caching
+- 🖼️ **Smush** - Image optimization
+- 🔍 **Yoast SEO** - SEO optimization
+- 🔒 **Wordfence** - Security
+
+</td>
+</tr>
+</table>
+
+### 📋 Custom Post Types
 
 ```php
 // Course Post Type
-- Title, Description, Thumbnail
-- Custom Fields: instructor, rating, duration, video_count
+register_post_type('course', [
+    'supports' => ['title', 'editor', 'thumbnail'],
+    'has_archive' => true,
+    'rewrite' => ['slug' => 'courses']
+]);
 
-// Video Post Type  
-- Title, Description, Video URL
-- Custom Fields: duration, order, course_id
-- Relationship: Belongs to Course
+// Video Post Type
+register_post_type('video', [
+    'supports' => ['title', 'editor', 'thumbnail'],
+    'rewrite' => ['slug' => 'videos']
+]);
 ```
 
-### Page Templates ที่ต้องสร้าง
+### 📄 Page Templates
 
-- `page-courses.php` - Course catalog
-- `single-course.php` - Course detail
-- `single-video.php` - Video player
+| Template | File | Purpose |
+|----------|------|---------|
+| Course Catalog | `page-courses.php` | แสดงรายการคอร์สทั้งหมด |
+| Course Detail | `single-course.php` | รายละเอียดคอร์ส + video list |
+| Video Player | `single-video.php` | เล่นวิดีโอ + playlist |
 
-### การใช้ Design System
+### 🎨 การใช้ Design System
 
-1. นำ CSS variables จาก `css/variables.css` ไปใช้ใน WordPress theme
-2. ใช้ component styles จาก `css/styles.css` เป็นแนวทาง
-3. อ้างอิง `pages/style-guide.html` สำหรับ component library
+1. **Copy CSS Variables** → นำ `css/variables.css` ไปใช้ใน theme
+2. **Adapt Components** → ใช้ `css/styles.css` เป็นแนวทาง
+3. **Reference Style Guide** → ดู `pages/style-guide.html` สำหรับ components
+4. **Follow Structure** → ใช้ HTML structure เดียวกัน
+
+> 📚 **อ่านคู่มือฉบับเต็ม:** [WordPress Implementation Guide](WORDPRESS-IMPLEMENTATION-GUIDE.md)
 
 ## 📚 เอกสารเพิ่มเติม
 
@@ -499,38 +714,68 @@ docs/
 
 ## 🤝 การมีส่วนร่วม
 
-เรายินดีรับการมีส่วนร่วมจากทุกคน! 
+<div align="center">
 
-### Quick Start
+### 💡 เรายินดีรับการมีส่วนร่วมจากทุกคน!
 
-1. Fork โปรเจกต์
-2. สร้าง feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit การเปลี่ยนแปลง (`git commit -m 'Add: amazing feature'`)
-4. Push ไปยัง branch (`git push origin feature/amazing-feature`)
-5. สร้าง Pull Request
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
+[![Contributors](https://img.shields.io/github/contributors/yourusername/video-course-platform?style=flat-square)](https://github.com/yourusername/video-course-platform/graphs/contributors)
 
-### คู่มือโดยละเอียด
+</div>
 
-อ่านคู่มือการมีส่วนร่วมแบบละเอียดได้ที่ [CONTRIBUTING.md](CONTRIBUTING.md)
+### 🚀 Quick Start
+
+```bash
+# 1. Fork โปรเจกต์
+# 2. Clone fork ของคุณ
+git clone https://github.com/your-username/video-course-platform.git
+
+# 3. สร้าง feature branch
+git checkout -b feature/amazing-feature
+
+# 4. Commit การเปลี่ยนแปลง
+git commit -m 'Add: amazing feature'
+
+# 5. Push ไปยัง branch
+git push origin feature/amazing-feature
+
+# 6. สร้าง Pull Request
+```
+
+### 📖 คู่มือโดยละเอียด
+
+อ่านคู่มือการมีส่วนร่วมแบบละเอียดได้ที่ **[CONTRIBUTING.md](CONTRIBUTING.md)**
 
 รวมถึง:
-- Coding standards (HTML, CSS, JavaScript)
-- Design guidelines
-- Testing checklist
-- Pull request process
-- Bug report และ feature request templates
+- ✅ Coding standards (HTML, CSS, JavaScript)
+- ✅ Design guidelines
+- ✅ Testing checklist
+- ✅ Pull request process
+- ✅ Bug report และ feature request templates
 
-### Coding Standards (สรุป)
+### 📝 Coding Standards (สรุป)
 
-- **HTML**: Semantic HTML5, 2 spaces indent
-- **CSS**: kebab-case classes, CSS variables, mobile-first
-- **JavaScript**: camelCase variables, ES6+, comments
+| Language | Standards |
+|----------|-----------|
+| **HTML** | Semantic HTML5, 2 spaces indent, lowercase attributes |
+| **CSS** | kebab-case classes, CSS variables, mobile-first, BEM naming |
+| **JavaScript** | camelCase variables, ES6+, JSDoc comments, no jQuery |
+
+> 📚 **อ่านเพิ่มเติม:** [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📝 License
 
-โปรเจกต์นี้สร้างขึ้นเพื่อใช้เป็น design mockup และ reference สำหรับการพัฒนา WordPress
+<div align="center">
 
-สามารถนำไปใช้และดัดแปลงได้ตามต้องการ
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+โปรเจกต์นี้เผยแพร่ภายใต้ **MIT License**
+
+สามารถนำไปใช้และดัดแปลงได้ตามต้องการ ทั้งเชิงพาณิชย์และส่วนตัว
+
+[อ่าน License ฉบับเต็ม](LICENSE)
+
+</div>
 
 ## 📞 ติดต่อและสนับสนุน
 
@@ -638,5 +883,6 @@ docs/
 ⭐ ถ้าโปรเจกต์นี้มีประโยชน์ อย่าลืม star repository นี้!
 
 </div>
-#   c o u r s e _ p l a t f o r m _ u i _ d e s i g n  
+#   c o u r s e _ p l a t f o r m _ u i _ d e s i g n 
+ 
  
